@@ -45,7 +45,8 @@ html{
   border-radius: 5px;
   width: fit-content;
   margin: auto;
-  box-shadow: gray 0px 2px 5px;
+  box-shadow: gray 0px 1px 2px;
+  border: 1px solid rgb(219, 219, 219);
   background-color: #ffffff;
 }
 
@@ -193,7 +194,7 @@ hr{
   color: #ffffff;
   border: none;
   margin-top: 13px;
-  padding: 10px 5px;
+  padding: 8px 5px;
   width: 100%;
   font-variant-caps: all-petite-caps;
   font-size: 18px;
@@ -204,11 +205,15 @@ hr{
 
 .AddTransactionContainer button:active{
   outline: none;
-  border: 1px solid black;
+  border: 1px solid white;
+  background-color: rgb(247, 247, 247);
   box-shadow: gray 0px 0px 2px;
+  color: rgb(51, 51, 51);
 }
 .AddTransactionContainer button:focus {
   outline: none;
-  border: 1px solid black;
+  background-color: white;
+  border: 1px solid rgb(51, 51, 51);
   box-shadow: gray 0px 0px 2px;
+  color: rgb(51, 51, 51);
 }

@@ -12,12 +12,20 @@ function AddTransaction() {
                     Description
                 </label>
                 <br/>
-                <input type="text" id="transactionDesc" placeholder="Description"/>
+                <input 
+                    type="text" 
+                    id="transactionDesc" 
+                    placeholder="Enter your description" 
+                />
                 <label htmlFor="transactionAmnt">
                     Amount
                 </label>
                 <br/>
-                <input type="text" id="transactionDesc" placeholder="Description"/>
+                <input 
+                    type="text" 
+                    id="transactionAmnt" 
+                    placeholder="Enter transaction amount" 
+                />
                 <button>Add Transaction</button>
             </form>
         </div>
