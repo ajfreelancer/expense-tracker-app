@@ -10,7 +10,10 @@ function AddTransaction() {
     
 
     let updateTransactions = () => {
-        if(desc !== "" && amount !== ""){
+        if(desc === ""){
+            document.getElementById("transactionDesc").style.borderColor = "red";
+        }
+        if(desc !== "" && amount !== "" && !isNaN(Number(amount))){
             changeTransactions([
                 ...transactions,
                 {
@@ -19,8 +22,13 @@ function AddTransaction() {
                 }
             ])  
             document.getElementById("addTransactionForm").reset();
+            document.getElementById("transactionAmnt").style.borderColor = "rgb(151, 151, 151)";
+            document.getElementById("transactionDesc").style.borderColor = "rgb(151, 151, 151)";
             setDesc("")
             setAmount("")
+        }
+        else{
+            document.getElementById("transactionAmnt").style.borderColor = "red";
         }
         
     }
