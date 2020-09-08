@@ -3,7 +3,8 @@ import TransactionsContext from '../contexts/TransactionsContext';
 
 function Balance() {
 
-    let [transactions, changeTransactions] = useContext(TransactionsContext)
+    const transactionsContext = useContext(TransactionsContext);
+    const transactions = transactionsContext[0];
 
     let balance = 0;
 

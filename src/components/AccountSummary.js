@@ -3,7 +3,8 @@ import TransactionsContext from '../contexts/TransactionsContext'
 
 function AccountSummary() {
 
-    const [transactions, changeTransactions] = useContext(TransactionsContext);
+    const transactionsContext = useContext(TransactionsContext);
+    const transactions = transactionsContext[0];
 
     let income = 0;
     let expense = 0;
