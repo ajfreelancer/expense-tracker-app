@@ -36,7 +36,7 @@ function AddTransaction() {
     return (
         <div className="AddTransactionContainer">
             <h3>
-                Add Transaction
+                Add Transactions
             </h3>
             <hr/>
             <form id="addTransactionForm">
